@@ -1,0 +1,200 @@
+:root{
+    --skin-color: green;
+    --border-style: 5px solid black;
+}
+
+body{
+    background: linear-gradient(#333, #000);
+    height: 100vh;
+}
+
+.yoshi{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    position: relative;
+}
+
+.cabeza{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.barbilla{
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(172deg, green 50%, white 70%) ;
+    position: absolute;
+    z-index: 2;
+    border: var(--border-style);
+    border-radius: 50%;
+    translate: 180px 45px;
+}
+
+.mouth{
+    width: 65px;
+    height: 100px;
+    border: var(--border-style);
+    background-color: white;
+    border-radius: 50%;
+    border-right: 0px;
+    border-top: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 250px 150px;
+    z-index: 3;
+    rotate: 45deg;
+}
+
+.tongue{
+    width: 65%;
+    height: 65%;
+    background-color: red;
+    border: var(--border-style);
+    border-radius: 50%;
+    transition: all 0.5s;
+    rotate: -5deg;
+}
+
+.tongue:hover{
+    translate: 1px 15px;
+}
+
+.hair-container{
+    width: 100px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.hair{
+    width: 50px;
+    height: 50px;
+    background-color: red; 
+    border: var(--border-style);
+    rotate: 45deg;
+    translate: -50px -40px;
+}
+
+.hair-container :nth-child(1){
+    translate: -53px -40px;
+    rotate: 20deg;
+}
+
+.hair-container :nth-child(2){
+    translate: -53px -40px;
+}
+
+.hair-container :nth-child(3){
+    translate: -85px -43px;
+    rotate: -1deg;
+}
+
+.nariz-container{
+    width: 250px;
+    height: 220px;
+    translate: 150px 50px;
+    z-index: 5;
+}
+
+.nose{
+    --size:100%;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--skin-color);
+    border: var(--border-style);
+    border-radius: 50%;
+    display: flex;
+   justify-content: center;
+}
+
+.holes{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    translate: 0px 35px;
+}
+
+.left-hole{
+    rotate: 30deg;
+}
+
+.right-hole{
+    rotate: -15deg;
+    translate: 15px 0px;
+}
+
+.hole{
+    width: 30%;
+    height: 45%;
+    border-top: var(--border-style);
+    border-radius: 50%;
+}
+
+.eyes{
+    width: 300px;
+    height: 250px;
+    align-self: start;
+    display: flex;
+    z-index: 3;
+}
+
+.ojo{
+    width: 125px;
+    height: 200px;
+    background-color: var(--skin-color);
+    border: var(--border-style);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.ojo-right{
+    translate: -30px 20px;
+}
+
+.retina{
+    width: 90px;
+    height: 140px;
+    background-color: white;
+    border: var(--border-style);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: -10px 0px;
+}
+
+.pupila{
+    width: 30px;
+    height: 60px;
+    background-color: black;
+    border: var(--border-style);
+    border-radius: 50%;
+    translate: 0px 0px;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.pupila:hover{
+    translate: 10px 0px;
+}
+
+.shine{
+    width: 15px;
+    height: 30px;
+    background-color: white;
+    border: var(--border-style);
+    border-radius: 50%;
+}
+
